@@ -1,0 +1,10 @@
+Bài 1. Đếm số phần tử khác nhau trong mảng 
+Bài 2. Tìm kiếm phần tử trong mảng
+Bài 3. Những phần tử thuộc mảng 1 mà không thuộc mảng 2
+Bài 4. Số có số lần xuất hiện nhiều nhất trong mảng
+Bài 5. Ký tự có số lần xuất hiện nhiều nhất trong xâu
+Bài 6. Xâu pangram
+Bài 7. Đếm số từ khác nhau trong xâu
+Bài 8. Từ có số lần xuất hiện nhiều nhất và có thứ tự từ điển nhỏ nhất
+Bài 9. Từ lặp đầu tiên trong xâu
+Bài 10. Đặt tên người dùng
