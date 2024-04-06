@@ -1,0 +1,12 @@
+Ho va ten: Nguyen Van Thinh
+Lop: K57S2
+Ma sinh vien: 21D190129
+Que quan: Thai Binh
+Ho va ten: Bui Danh Hao
+Lop: K59S1
+Ma sinh vien: 23D190091
+Que quan: Ha Noi
+Ho va ten: Nguyen Quang Huy
+Lop: K58S3
+Ma sinh vien: 22D190194
+Que quan: Hai Phong
