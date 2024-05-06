@@ -41,11 +41,12 @@ void dfs(int node){
     }
 }
 
-void topo_search(stack<int> &st, int node){
+// topo sort
+void topo_sort(stack<int> &st, int node){
     visited[node] = true;
     for(int adj_node : adj_list[node]){
         if(visited[adj_node] == false){
-            topo_search(st, adj_node);
+            topo_sort(st, adj_node);
         }
     }
     st.push(node);
@@ -59,7 +60,7 @@ int main(){
     stack<int> topo;
     for(int i = 0; i < n; i++){
         if(visited[i] == false)
-            topo_search(topo, i);
+            topo_sort(topo, i);
     }
     while(topo.empty() == false){
         cout << topo.top() << " ";
