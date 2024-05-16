@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 void InsertionSort(int a[], int n){
     for(int i = 1; i < n; i++){
@@ -14,7 +14,11 @@ void InsertionSort(int a[], int n){
 int main(){
     int n; cin >> n;
     int a[n];
+
     for(int &x : a) cin >> x;
+
     InsertionSort(a,n);
+
     for(int x : a) cout << x << " ";
+    
 }
