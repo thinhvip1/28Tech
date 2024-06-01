@@ -23,14 +23,6 @@ void merge_arr(int a[], int n, int b[], int m, int res[]){
 }
 // trộn mảng 
 void merge(int a[], int l, int m, int r){
-    // int tmp_l = l, tmp_m = m+1, res[r-l+1], cnt = 0;
-    // while(l <= m && tmp_m <= r){
-    //     if(a[l]<=a[tmp_m]) res[cnt++] = a[l++];
-    //     if(a[l]>=a[tmp_m]) res[cnt++] = a[tmp_m++];
-    // }
-    // while(l<=m) res[cnt++] = a[l++];
-    // while(tmp_m<=r) res[cnt++] = a[tmp_m++];
-    // for(int i = tmp_l; i <= r; i++) a[i] = res[i-tmp_l];
     vector<int> x(a+l, a+m+1);
     vector<int> y(a+m+1, a+r+1);
     int i = 0, j = 0;
@@ -57,8 +49,9 @@ int merge1(int a[], int l, int m, int r){
     vector<int> x(a+l,a+m+1);
     vector<int> y(a+m+1,a+r+1);
     int i = 0, j = 0, cnt = 0;
-    while(i<x.size()&&j<y.size()){
-        if(x[i]<=y[j]) a[l] = x[i++];
+    while(i < x.size() && j < y.size()){
+        if(x[i] <= y[j]) 
+            a[l] = x[i++];
         else{
             // nếu x[i] > y[j] 
             a[l] = y[j++];
@@ -66,8 +59,10 @@ int merge1(int a[], int l, int m, int r){
         }
         l++;
     }
-    while(i<x.size()) a[l++] = x[i++];
-    while(j<y.size()) a[l++] = y[j++];
+    while(i < x.size()) 
+        a[l++] = x[i++];
+    while(j < y.size()) 
+        a[l++] = y[j++];
     return cnt;
 }
 int cnt_inversion(int a[], int l, int r){
